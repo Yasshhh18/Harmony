@@ -90,7 +90,7 @@ export const Navbar: React.FC = () => {
                   className={`relative px-4 py-2 font-label-caps text-label-caps uppercase tracking-[0.12em] transition-colors duration-300 ${
                     isActive ? 'text-secondary-container font-bold' : 'text-on-surface-variant hover:text-primary'
                   }`}
-                  onClick={(e) => {
+                  onClick={() => {
                     // Temporarily disable scroll spy during smooth scroll
                     isClickScrolling.current = true;
                     setActiveSection(link.id);
